@@ -1,0 +1,9 @@
+# Frozen benchmark protocol
+
+The target is the 1:5 extract EC in mS/cm. The primary endpoint is pooled held-out RMSE across all 349 records in the archived spatial folds, with a 1 km exclusion around the test coordinates. The exact inner and outer V1 membership table is reused for six pooled spatial folds, two complete campaign transfers and two buffered transfers. No final row selection or test-driven tuning is performed. See `code/configs/frozen_primary_protocol.json`, its SHA-256 companion, and `pre_evaluation_hashes.txt`.
+
+The proposal is MISA. For every outer fit, the inner grid searches use one fixed random seed and four validation partitions. Each main family receives eight fixed-seed configurations, with four for controlled ablations or loss variants. Mean uses its training mean, while IDW evaluates six combinations of power 1, 2 or 3 and 8 or 20 neighbors. Families selected for MISA are distinct. The convex stacking fit uses only training-row predictions obtained from inner holdouts. The gate shrinks two Sentinel-2 availability regimes toward the global blend. Main model families receive identical enriched predictor access. Coordinate IDW and historical V1 are explicit input-limited references. The full-input ExtraTrees, RF and Huber-GB four-trial controls match the variant search budgets.
+
+Score differences resample the same six archived spatial test groups 4,000 times. Report the ordinary paired percentile interval, not a refitting or external uncertainty interval. The high-EC cut point is 5 mS/cm, used for prespecified weighting or error reporting and never as an input feature. Complete-optical-site sensitivity compares the same held-out predictions within a subset; it does not refit after dropping rows.
+
+The original data and broad V1 results were known before V3. The frozen V3 code preceded the new held-out scoring, but this analysis cannot support an external validation claim.

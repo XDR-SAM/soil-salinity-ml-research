@@ -1,0 +1,31 @@
+{
+  "sha256": {
+    "data/derived/elevation.csv": "85c590717d8272157db9cc760b2c7bf9744d3f77642e3cb207b576ea31d17ef2",
+    "data/derived/field.csv": "954d0d68ab4facd06b6f1c242269dc989b1e9b02297d8dd863169b1dc80ebd88",
+    "data/derived/landsat.csv": "28cd2343aa122fe9981cdafd7397a92e09eddc063100372d3f9c7eabaef15262",
+    "data/derived/landsat_scene_log.csv": "07ff72121f2543310d27c2b4b227ebc8450dfffda4b714caed52f548cd8fa749",
+    "data/derived/processing_log.csv": "bbba3a7ef07e072936431d3296e6f0fd211fae595d8170d25a679c4bb37adea7",
+    "data/derived/sentinel.csv": "628ed42a2675cedb006da498fa8fd03c9568238aa1e7bbc23c8c6c378cf89a68",
+    "data/derived/sentinel_log.csv": "fac5adea2f4c7b96949e81e278a66320bb7233787497e35836b9b677493243e4",
+    "data/derived/terrain.csv": "1764d64267435a56cb04626aee2019ba7415db88d7146ec523b52565cd99dbea",
+    "data/derived/v1_predictions.csv": "7673e8327528c0e24958f6810698d37bb8fd4454e0a83c2b229e90dbf4427d08",
+    "data/derived/v1_splits.csv": "d60ca6fd451dda602f8aa028ab9689f585cdb5409b618345ac580ffc05c495b8",
+    "data/terrain_tiles.json": "5f2a4aee09271718b28983074206f196a88384d9bb469bfdadabcff0f28ac729",
+    "data/landsat_items.json": "4e97c8c2cdd41b4f9b7c2be2ce2ed2c86b4103671d0eaf8ca1dbcd9c42c29c84",
+    "data/sentinel_2024.json": "fa80fd518515f35026be2f03e471fe4e04aaf241e4b366f09a69cef1f3403ff9",
+    "data/sentinel_2025.json": "239258c841fe3d9ffa853397462b58c38476f597731951a4ec2ab52336ce36ca"
+  },
+  "landsat_repeat_checks": [
+    {
+      "year": 2024,
+      "uid": "2024-32",
+      "scene": "LC09_L2SP_137044_20240301_02_T1"
+    },
+    {
+      "year": 2025,
+      "uid": "2025-34",
+      "scene": "LC08_L2SP_137044_20250413_02_T1"
+    }
+  ],
+  "terrain_repeat_rows": 349
+}

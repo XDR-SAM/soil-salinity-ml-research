@@ -1,66 +1,56 @@
-# Soil salinity prediction in coastal Bangladesh
+# Optical coverage recovery and soil salinity prediction in coastal Bangladesh
 
-Secondary analysis of **349 measured 1:5 soil–water electrical conductivity records** from two field campaigns in coastal southwestern Bangladesh. The pipeline evaluates geographic extrapolation and both directions of campaign transfer with recorded train–test splits. It compares spatial interpolation and location-only regression with publicly retrievable Sentinel-2 and elevation predictors.
+This project reanalyzes 349 field measurements of 1:5 soil–water extract electrical conductivity from the 2024 and 2025 campaigns. It evaluates MISA, a missingness-informed spatial ensemble, on archived buffered spatial folds and both campaign transfers. [IEEE manuscript](paper/main.pdf) · [Editable LaTeX](paper/main.tex) · [Executive summary](EXECUTIVE_SUMMARY.md)
 
-**Manuscript:** [IEEE conference-format PDF](paper/main.pdf) · [LaTeX](paper/main.tex) · [bibliography](paper/references.bib)
+| Buffered spatial procedure | RMSE (mS/cm) | MAE (mS/cm) | R² |
+| --- | ---: | ---: | ---: |
+| ExtraTrees without Landsat, lowest observed RMSE | 1.729 | 1.244 | 0.350 |
+| MISA | 1.763 | 1.237 | 0.325 |
+| V1 Auto | 1.842 | 1.312 | 0.263 |
 
-**Research outputs:** [metrics](results/metrics.csv) · [predictions](results/predictions.csv) · [paired intervals](results/paired_deltas.csv) · [workflow](figures/workflow.svg) · [supplement](supplementary/README.md)
+Landsat recovered 54 of 72 Sentinel-2 gaps, raising optical coverage to 331 of 349 sites. MISA reduced RMSE relative to V1 Auto by 0.079 mS/cm (4.31%, paired 95% spatial-block interval [−0.146, −0.017]). The strongest-comparator comparison did not establish overall superiority. The study reuses previously examined campaigns. [Claims and evidence](CLAIMS_AND_EVIDENCE.md) · [Publication readiness](PUBLICATION_READINESS.md) · [Recovery analysis](reports/recovery_analysis.md)
 
-## Source data
+## Verify and compile the archived study
 
-The original field data and assay belong to the Zenodo creators. The 2024 and 2025 releases are [10.5281/zenodo.14560019](https://doi.org/10.5281/zenodo.14560019) and [10.5281/zenodo.19711551](https://doi.org/10.5281/zenodo.19711551). Both records specify CC BY 4.0. See the [data guide](data/README.md) for attribution, workbook notices, the Copernicus Sentinel-2 and DSM sources, and the [manifest](data/manifest.json) for verified hashes. Original XLSX and raster files are retrieved at runtime. No credentials are required for the pinned sources.
-
-## Reproduce
-
-Tested on Windows 11 x64 using CPython 3.14.3 and an AMD Ryzen 5 5600 CPU. GPU is unnecessary. `requirements.txt` pins direct dependencies. [requirements-lock.txt](requirements-lock.txt) records the full dependency set from the fresh Windows environment. The [run environment](results/versions.json) includes model and data package versions. Install Tectonic for the Python reproduction entry point or use a TeX Live installation with latexmk and IEEEtran for the shell build. Tectonic 0.17.0 was used for the archived PDF. Its initial setup requires network access for TeX files.
-
-```powershell
-python -m venv .venv
-.venv/Scripts/python -m pip install -r requirements.txt
-.venv/Scripts/python scripts/reproduce.py --smoke
-.venv/Scripts/python scripts/reproduce.py --jobs 4 --compiler tectonic
-```
-
-On Linux or macOS, use `.venv/bin/python` and install the platform equivalents. Those environments were not exercised here. Remote raster reads may take several minutes, depending on range request latency. Four concurrent outer-fold workers fit on CPU, with each fit limited to one thread. The experiment log records measured runtimes.
-
-Individual steps:
+Use CPython 3.14 and Tectonic. Create and activate an isolated environment before installing the pinned dependencies.
 
 ```text
-python scripts/download_originals.py
-python scripts/build_dataset.py
-python scripts/audit_satkhira.py
-python scripts/fetch_remote_sensing.py --snapshot
-python scripts/fetch_elevation.py
-python scripts/train_models.py --jobs 4
-python scripts/evaluate.py
-python scripts/make_figures.py
-python scripts/paper_numbers.py
+python -m venv .venv
+python -m pip install -r code/requirements.txt
+python -m pytest -q code/tests
 ```
 
-Use `scripts/build_paper.ps1 -Compiler tectonic` or `sh scripts/build_paper.sh` and finish with `python -m pytest -q`. The satellite snapshot pins the catalog items and asset metadata. Omitting `--snapshot` queries the live catalog and can change the available scenes. The smoke run downloads and verifies the originals, audits records and exercises the split/fitting path with a reduced coordinate-only grid. Smoke outputs are local under `data/derived/smoke`.
+To build the paper with the bundled numerical macros and figures, run the following commands from the project root. Tectonic invokes BibTeX and can fetch standard TeX packages on first use.
 
-## Experiment card
+```text
+cd paper
+tectonic --keep-logs main.tex
+```
 
-| Experiment | Status | Design |
-| --- | --- | --- |
-| Field audit and source hashes | Executed | Both versioned releases and all 349 field rows |
-| Sentinel-2 and GLO-30 acquisition | Executed | Pre-collection pixel observations and static surface elevation |
-| Track I exact Satkhira comparison | Blocked | Candidate counts match. Author-selected records, exact features, folds and scoring workflow remain unverified. |
-| Track II extended spatial CV | Executed | Six pooled geographic folds with 1 km buffers; four buffered inner folds |
-| Track III cross-campaign transfer | Executed | Both directions with training-year-only tuning and full target-campaign testing |
-| Track IV geographic buffer sensitivity | Executed | Both transfers with 1 km training exclusion |
-| Feature reduction and fixed-vs-tuned random forest | Executed | Matched outer predictions with inner-only tuning |
-| EBK, stacking/GAM, climate extensions and deep nets | Not attempted | Scope limited to the archived optical/DSM and location benchmark |
-| Final experiments with unresolved runtime failures | None | Individual fit warnings, if any, are retained. |
+The v3.0.0 release includes the PDF, the full reproducible project ZIP, and the Overleaf source ZIP. Upload the Overleaf ZIP as a project and select `main.tex` as the main document. Use XeLaTeX to match the verified local build.
 
-A separate [benchmark audit](reports/comparison.md) explains the comparison boundary with the 2026 preprint. [Limitations and reviewer checks](reports/limitations.md) cover the six-block bootstrap, proxy quality, and the distinct effects of sampling month and location. The manuscript and results are for methodological assessment of point prediction.
+## Reproduce the experiments
 
-## Outputs and attribution
+For a new execution of the frozen benchmark, run from the root:
 
-- `data/derived/`: local processing ledger, cleaned field table and extracted feature tables.
-- `results/`: exact held-out predictions, membership, feature provenance, search diagnostics, model metrics and paired spatial bootstrap intervals.
-- `figures/`: vector PDF/SVG and high-DPI PNG versions.
-- `paper/`: IEEEtran manuscript, bibliography and generated numerical macros.
-- `reports/`: workbook audit, data dictionary, source and literature verification, and execution record.
+```text
+python code/run_all.py --jobs 4 --compiler tectonic
+```
 
-Original research software is licensed under MIT. Dataset and asset attributions are listed in [the data guide](data/README.md). Use [CITATION.cff](CITATION.cff) for the project citation.
+This command fits the archived procedures on CPU and regenerates analysis outputs. The default uses bundled feature tables and fixed split memberships. Add `--verify-originals` to retrieve and verify the workbook originals. Run `python code/scripts/download_originals.py` to check workbook provenance without running the benchmark. The optional `--refresh-new-features` reacquires Landsat and terrain before analysis. Upstream changes can cause checksum differences. Keep the release snapshot separate when rerunning acquisition or fitting. Run `python code/scripts/development.py` for the separate training-only residual-correction study.
+
+The inputs come from the official Zenodo releases [10.5281/zenodo.14560019](https://doi.org/10.5281/zenodo.14560019) and [10.5281/zenodo.19711551](https://doi.org/10.5281/zenodo.19711551). The workbooks and full rasters are retrieved from their sources. The permitted derived tables are bundled. [Provenance and data rights](data/README.md)
+
+## Project structure
+
+| Path | Contents |
+| --- | --- |
+| [paper/](paper/) | Final IEEE PDF, editable LaTeX, frozen numerical macros, and bibliography |
+| [code/](code/) | Training, evaluation, feature acquisition, packaging, tests, dependencies, and the frozen protocol |
+| [results/](results/) | Held-out predictions, metrics, paired differences, subgroups, fit logs, and selected hyperparameters |
+| [figures/](figures/) | All seven figures in PDF, SVG, and PNG, including the proposed framework |
+| [data/](data/) | Official sources, checksums, data licenses, and derived inputs |
+| [reports/](reports/) | Protocol, literature review, data audit, and reproducibility checks |
+| [archive/v1/](archive/v1/) | Historical source and selected baseline evidence |
+
+Code is MIT-licensed. Source datasets and imagery follow the terms documented in the data guide. Cite the study using [CITATION.cff](CITATION.cff). [Final verification report](reports/final_submission_qa.md)

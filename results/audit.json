@@ -1,0 +1,14 @@
+{
+  "prior_predictions_audited": 58632,
+  "minimum_spatial_test_train_m": 1161.1816494688303,
+  "years": {
+    "2024": 162,
+    "2025": 187
+  },
+  "duplicate_coordinates": 0,
+  "duplicate_s2_scene_cells": 0,
+  "workbook_md5": {
+    "Soil_Salinity_Data_BD032024.xlsx": "1da7d0e9282e1b5a8ee14618b9ec583c",
+    "Soil_Salinity_Data_BD042025.xlsx": "f0189c1cf56fe7af8f63f2a7277ceba7"
+  }
+}

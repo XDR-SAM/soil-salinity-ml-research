@@ -1,0 +1,37 @@
+{
+  "proposed": {
+    "track": "Spatial",
+    "model": "MISA",
+    "n": 349,
+    "rmse": 1.7626988658732659,
+    "mae": 1.2373322402958848,
+    "r2": 0.3249985270923186,
+    "bias": 0.027498492030127747,
+    "rmse_lo": 1.3418249791078658,
+    "rmse_hi": 2.0375776566502095
+  },
+  "best": {
+    "track": "Spatial",
+    "model": "ET no_landsat",
+    "n": 349,
+    "rmse": 1.7292178740508362,
+    "mae": 1.2444021881629055,
+    "r2": 0.35039717894633815,
+    "bias": 0.08223175624542303,
+    "rmse_lo": 1.3795776940228317,
+    "rmse_hi": 1.9904261244250387
+  },
+  "strongest_comparator": {
+    "track": "Spatial",
+    "model": "ET no_landsat",
+    "n": 349,
+    "rmse": 1.7292178740508362,
+    "mae": 1.2444021881629055,
+    "r2": 0.35039717894633815,
+    "bias": 0.08223175624542303,
+    "rmse_lo": 1.3795776940228317,
+    "rmse_hi": 1.9904261244250387
+  },
+  "paired_superiority": false,
+  "independent_external_validation": false
+}

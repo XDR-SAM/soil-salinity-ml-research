@@ -1,26 +1,64 @@
 cff-version: 1.2.0
-message: Cite the manuscript and separately credit both original data releases.
-title: "Benchmarking Machine Learning for Multi-Year Soil Salinity Prediction in Coastal Bangladesh: Spatial and Temporal Generalization"
+message: Cite this manuscript and credit both original data releases separately.
+title: Optical Coverage Recovery and Missingness-Aware Ensembles for Soil Salinity Prediction in Coastal Bangladesh
 type: software
+version: 3.0.0
+license: MIT
 authors:
-  - family-names: Rima
-    given-names: Kamrunnahar
+  - given-names: Kamrunnahar
+    family-names: Rima
     affiliation: Bangladesh University
-  - family-names: Hasiba
-    given-names: Sheikh
+  - given-names: Sheikh
+    family-names: Hasiba
     affiliation: Bangladesh University
 references:
   - type: data
     title: A Topsoil Salinity Observatory for Arable Lands in Coastal Southwest Bangladesh
     authors:
-      - family-names: Sarkar
-        given-names: Showmitra Kumar
+      - family-names: "Sarkar"
+        given-names: "Showmitra Kumar"
+      - family-names: "Haydar"
+        given-names: "Mafrid"
+      - family-names: "Rudra"
+        given-names: "Rhyme Rubayet"
+      - family-names: "Mazumder"
+        given-names: "Tanmoy"
+      - family-names: "Nur"
+        given-names: "Md. Sadmin"
+      - family-names: "Islam"
+        given-names: "Md. Shahriar"
+      - family-names: "Sany"
+        given-names: "Shakib Mohammad"
+      - family-names: "Noor"
+        given-names: "Tanzim Al"
+      - family-names: "Ahmed"
+        given-names: "Shakil"
+      - family-names: "Ahmad"
+        given-names: "Myisha"
+      - family-names: "Sakib"
+        given-names: "Annajmus"
+      - family-names: "Ravela"
+        given-names: "Sai"
     doi: 10.5281/zenodo.14560019
     year: 2024
   - type: data
     title: A Topsoil Salinity Observatory for Arable Lands in Coastal Southwest Bangladesh (2025)
     authors:
-      - family-names: Sarkar
-        given-names: Showmitra Kumar
+      - family-names: "Sarkar"
+        given-names: "Showmitra Kumar"
+      - family-names: "Haydar"
+        given-names: "Mafrid"
+      - family-names: "Mazumder"
+        given-names: "Tanmoy"
+      - family-names: "Sany"
+        given-names: "Shakib Mohammad"
+      - family-names: "Al Noor"
+        given-names: "Tanzim"
+      - family-names: "Ahmed"
+        given-names: "Shakil"
+      - family-names: "Utsho"
+        given-names: "Naimur Rahman"
+      - family-names: "Ravela"
+        given-names: "Sai"
     doi: 10.5281/zenodo.19711551
     year: 2026

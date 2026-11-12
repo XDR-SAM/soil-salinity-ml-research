@@ -1,5412 +1,3562 @@
-[
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.313954712983945,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.4465149100851464,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.0714412125421,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.0334018449078424,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.0326620273084237,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.25
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.9650062335355618,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.120136161311632,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 1.9766971308405619,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.0139930193204525,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.5723561399125603,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 1.9864518762979637,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.0534512701918644,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.2939087315820266,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.1173315509446042,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.4289617255551623,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.225381090431238,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.195256827410672,
-    "params": {
-      "C": 2,
-      "epsilon": 0.15
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.7824983189606254,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7987816583063685,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.8026585448038877,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.7856163627819748,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.7772191241327755,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.7917435900678815,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.8198515679609846,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 1.9487758221621547,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.8823915895454695,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.7334834725774628,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7334834725774628,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.7207279591267384,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.7732086536491096,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.7317654411753685,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.712460722899108,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.7449842505427595,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 1.937502396560484,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.887430441799767,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.7332215969329727,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7332215969329727,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.7290082019673252,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.776589931551323,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.7395569899762953,
-    "params": {
-      "k": 5,
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.7291097951862162,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.7538587258412497,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 1.9605501949063124,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.88902518005441,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.7486391604519105,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 1.9858241218715422,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.7614727309884575,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.8784574991134897,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 1.9433418957070594,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.8318919824966116,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "1",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.876708811828435,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.238545832958535,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.355999416152193,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 1.9150028631641447,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 1.911261341565457,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 1.8921239595840322,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.9652166758488558,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.0544227282115934,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 1.9795774725973212,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 1.9965616825895163,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.342485092114965,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 1.9397226156870504,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.0023443066374043,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.2173203684017815,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.0844929726212285,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.0245427451049096,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.1544391269711727,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.138545075526871,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.7975016363502232,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7975016363502232,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.8023319129186253,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.8062130416974442,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.823785025670679,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.7883075208600603,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.8465354260487166,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 1.9715151655313072,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.881152632350248,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.7274912460019176,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7593673965943823,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.7131814958447442,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.7711318975227541,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.7655877986146264,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.7598311460008211,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.7394129947312689,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 1.9638925270501295,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.8486413461553282,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.7429757626857105,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.759047863163594,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.7248915222030463,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.772110044723766,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.7620931767621117,
-    "params": {
-      "k": 5,
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.7518217130771396,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.7415352364607715,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 1.9177501001182398,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.7685958980795624,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.7425019087001705,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.0705631661665955,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.6850845965170764,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.8571173485087924,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 1.951461128849143,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.836528534303474,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "2",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.723996683464536,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.2512482593197256,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.3681204344331817,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.2235432722007684,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.164263916123787,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.164714773012785,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 2.2839268137796336,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.3350143149215543,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 2.320133396788501,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.296749662691779,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.8320253102593087,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 2.177967632267486,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.366972828455848,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.690105252339593,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.45003988001977,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.689054335390023,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.23540864746385,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.1737949982995755,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.9455340184602123,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.9590157776930035,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.955246079611437,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.9837791351911462,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.988542092244006,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.9572490684299544,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.991958511223629,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 2.2332820701224185,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 2.059748215223246,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.941414071836599,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.9538164353303842,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.9344665479745768,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.9827480967435442,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.9587147354621808,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.9425529638887824,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.9590350699091525,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 2.2393322144823236,
-    "params": {
-      "alpha": 100,
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 2.1034711355471947,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.9795811967130506,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.9991659595252453,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.9676626542138254,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.9917776721845613,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.9951064317962062,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 2.008621451673548,
-    "params": {
-      "k": 5,
-      "min_child_samples": 10,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 2.003825356790378,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 2.2159136570392675,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 2.060743061303891,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.9865740689993279,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.288698735119047,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.9880920778472897,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 2.1793347182563867,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 2.316091414224416,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 2.0753783572863247,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "3",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 2.0027881639355116,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.380257316220095,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.554981788875274,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.1214527765646194,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.1033662283839307,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.107064631424699,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.25
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 2.0501706626003675,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.1680858819669875,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 2.0448770299519494,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.079896646794682,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.8125873131868184,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 2.091238094995148,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.1581789019656394,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.3421856598068627,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.104568943645031,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.5442138076403467,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.2909984531501064,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.2224024454768534,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.866674405316469,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.8694870579212746,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.8911882279223131,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.8894398530775183,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.8785771231317863,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.852503553358573,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.9215242679085645,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 2.1326146382883535,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.9734279985008418,
-    "params": {
-      "C": 2,
-      "epsilon": 0.15
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.857686405267758,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.8769006238288415,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.8453541992129459,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.8685780248066193,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.861833766155381,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.8316476097796075,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.8676721661205682,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 2.1206117856570903,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.9719395674847389,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.8743048437792076,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.8924294127707322,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.8607992152379003,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.8837672179548361,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.8849754842984277,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.8552238230271123,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.8827586566280807,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 2.081874006453292,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.9190739511306454,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.849636294191831,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.1828619079784275,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.881992766540282,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.976492949332926,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 2.051282392440825,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.8119648429195074,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "4",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.9958434560189282,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.232429162852691,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.326318295546484,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.092045595451834,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.084352924746374,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.070693658026048,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.25
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.943811246055226,
-    "params": {
-      "n_neighbors": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.112105581114111,
-    "params": {
-      "C": 2,
-      "epsilon": 0.15
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 2.0297081377150916,
-    "params": {
-      "neighbors": 8,
-      "power": 2
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.0607818824080795,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.233685927396149,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 2.0482480659072873,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.060589458873524,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.046765926714033,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.1793736276107887,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.0648942051931054,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.1978110676242135,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.30833535151117,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 2.096556677277293,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 2.096556677277293,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 2.1232559834162554,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 2.2421731625142964,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 2.226724633661084,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 2.1614755794454332,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 2.218279242416247,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 2.135599771933112,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 2.0968539781966924,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 2.0054925272344297,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 2.021735856821533,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 2.028911420724853,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 2.1039653712133775,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 2.0734212077648717,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 2.06328601279635,
-    "params": {
-      "min_child_samples": 10,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 2.054045407973125,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 2.1558874919715434,
-    "params": {
-      "alpha": 10,
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 2.092472757162182,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 2.054506998137743,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 2.054506998137743,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 2.060303021299992,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 2.109384000894275,
-    "params": {
-      "k": 5,
-      "max_depth": 1,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 2.0601293036921318,
-    "params": {
-      "k": 5,
-      "max_depth": 3,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 2.0900865308959484,
-    "params": {
-      "k": 5,
-      "min_child_samples": 10,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 2.0424088358784473,
-    "params": {
-      "depth": 3,
-      "k": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 2.109000652854255,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.9997220413670085,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 2.0950580095783895,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.159616549065169,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 2.041354637498979,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 2.1305178668667226,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 2.116545365137237,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 2.1577928307803744,
-    "params": {
-      "min_child_samples": 10,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "5",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 2.082475824441315,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.2041215071339932,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.3146557958795917,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 1.914713285961129,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 1.9148004429683767,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 1.9015419933236848,
-    "params": {
-      "alpha": 0.25,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.8947981295682264,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.110685673708417,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 1.8619941503285462,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 1.8733826743184299,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 1.9734651737631799,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 1.8846619331493795,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 1.8732377932168724,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 1.8874356556883576,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 1.9076046033446397,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 1.892684780505444,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.106542267853778,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.167636902590907,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.7397719818251192,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7602150530938616,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.7537303283477503,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.7676951214364234,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.7702809032404627,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.759443826704351,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.7847196914471852,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 1.9292935269427995,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.8813480022163924,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.7414779258969704,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7616281117143593,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.6974924583354079,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.7516710271816218,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.7504387814972504,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.7257997987822744,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.7291695170132477,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 1.9220377433656954,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.8398475533265026,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.7431018102551794,
-    "params": {
-      "k": 3,
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.7729636548998664,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.7305417090442914,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.7710932847462613,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.7705409351602606,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.7446118787195346,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.7515706441917038,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 1.900792916026084,
-    "params": {
-      "alpha": 100
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.7900301908318048,
-    "params": {
-      "C": 2,
-      "epsilon": 0.15
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.6741640995431621,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 1.6948063987595134,
-    "params": {}
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.678875416116949,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.724531267900005,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 1.7036273109644975,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.6484702687970905,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "Spatial",
-    "fold": "6",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.661181039470883,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 1.635779201244969,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 1.700023604333405,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 1.392331097269939,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 1.3867419091430842,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 1.3813861379895767,
-    "params": {
-      "alpha": 0.05,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.497487334993323,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 1.5913066940795817,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 1.4810150887392786,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 1.4651968476960284,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 1.4946453640088984,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 1.427043931505394,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 1.4436278518045478,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 1.5141089272234722,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 1.4749658247102753,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 1.4586670356679616,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 1.5767512515148279,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 1.5920961080506684,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.4104669958347966,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.4153486585113237,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.447017569659594,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.4615262044306654,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.4278302664609295,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.4206364274063743,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.478133899842357,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 1.3663569804743476,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.38084823605431,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.3430303565748731,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.3517427949740044,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.3611933727428822,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.3402187208045628,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.3426147240515782,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.3406868941808792,
-    "params": {
-      "min_child_samples": 10,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.3662455142339236,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 1.361380699536665,
-    "params": {
-      "alpha": 1,
-      "k": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.3682147262977855,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.3472063862175045,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.3592747303069648,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.3470605362603876,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.3396348440898684,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.3305066587619154,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.3214253992422986,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.372594330685142,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 1.3453875715451205,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.36218601713311,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.3976058311774486,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 1.4230765868021185,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.3668877648117512,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.393259094386872,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 1.4085768962109306,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.3680192177417805,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025",
-    "fold": "1",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.3660580673498102,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 1.669307653476279,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 1.73157820684188,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 1.4111218454056553,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 1.4073209308291286,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 1.4062672382398755,
-    "params": {
-      "alpha": 0.05,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 1.5577423031673845,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 1.631188080957372,
-    "params": {
-      "C": 0.5,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 1.5768670838090664,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 1.509158150480947,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 1.5576758680833025,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 1.4759496749570828,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 1.468585083009891,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 1.589994663587618,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 1.5781622988053814,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 1.5169488577025314,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 1.601794349442398,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 1.663928976867352,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 1.4528410514831727,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 1.464149477333528,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 1.4965721937642538,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 1.4760117361636613,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 1.469055852783522,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 1.4520749327276485,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 1.5428788381531935,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 1.3762568754052364,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 1.4175707145586718,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 1.3854078317116134,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 1.396401482568548,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 1.4002711665522871,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 1.398857321659781,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 1.4033236091091101,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 1.3935502774698718,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 1.4254239448619634,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 1.3830205255470078,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 1.398090233865855,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 1.379043105028088,
-    "params": {
-      "k": 3,
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 1.4197646425076489,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 1.3801161154356036,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 1.415967136832703,
-    "params": {
-      "k": 3,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 1.4145367653028558,
-    "params": {
-      "k": 3,
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 1.3799819494937162,
-    "params": {
-      "k": 3,
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 1.413856403133867,
-    "params": {
-      "depth": 5,
-      "k": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 1.3643673148407873,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 1.3901265242798335,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 1.408685145120694,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 1.4381096013170054,
-    "params": {}
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 1.4074258584450474,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 1.4021586448377854,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 1.4111571863043555,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 1.3963724040009429,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2024-to-2025-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 1.3986903485196749,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.7192713573267477,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.883869003464683,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.3729154894379825,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.3737003590930907,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.3733879917051017,
-    "params": {
-      "alpha": 0.05,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 2.3801277650816663,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.3812619257993437,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 2.3424922528734347,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.398536979830766,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.542413306248088,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 2.407513119018263,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.466777778851801,
-    "params": {
-      "max_depth": 1,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.647860937372385,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.3358251001779786,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.369193976443327,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.536687394831107,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.6409784880139724,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 2.083932372783751,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 2.083932372783751,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 2.143732845690741,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 2.13444519887539,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 2.1382453120512803,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 2.121740993838639,
-    "params": {
-      "min_child_samples": 10,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 2.165069486091374,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 2.4794066952802636,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 2.36754580322366,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 2.1475098593823088,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 2.1850987130642157,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 2.145957813310437,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 2.1543951995339516,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 2.1755143744765264,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 2.096152635332514,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 2.140335951678228,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 2.536776103411028,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 2.2407581139461095,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 2.183217590996563,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 2.223956349389126,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 2.1733901415882526,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 2.223482910288764,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 2.2055733013116265,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 2.1532990797644884,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 2.2035212463471248,
-    "params": {
-      "depth": 5,
-      "k": 5,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 2.4206957185158733,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 2.228191494276059,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 2.1838896081561905,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.4119668240948844,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 2.176008443793281,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 2.309850686489821,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 2.346417071566344,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 2.1885291671317093,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2025-to-2024",
-    "fold": "1",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 2.2235422641102827,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Mean",
-    "inner_rmse": 2.71619524256897,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Median",
-    "inner_rmse": 2.877121640398905,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "OLS",
-    "inner_rmse": 2.3795970963061284,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "Ridge",
-    "inner_rmse": 2.3802425565666865,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "ElasticNet",
-    "inner_rmse": 2.3791529423854207,
-    "params": {
-      "alpha": 0.05,
-      "l1_ratio": 0.75
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "KNN",
-    "inner_rmse": 2.2993397861847136,
-    "params": {
-      "n_neighbors": 24
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "SVR",
-    "inner_rmse": 2.2945355711352944,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "IDW",
-    "inner_rmse": 2.26392384359484,
-    "params": {
-      "neighbors": 20,
-      "power": 1
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF",
-    "inner_rmse": 2.271423533583823,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "RF-fixed",
-    "inner_rmse": 2.3467490146051624,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "ET",
-    "inner_rmse": 2.321938538393093,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "GB",
-    "inner_rmse": 2.3717392579122034,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "XGB",
-    "inner_rmse": 2.3151866876299163,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "LGBM",
-    "inner_rmse": 2.33957006766172,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "A",
-    "model": "CatBoost",
-    "inner_rmse": 2.2263933569911187,
-    "params": {
-      "depth": 3,
-      "l2_leaf_reg": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "Ridge",
-    "inner_rmse": 2.567095661718361,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "SVR",
-    "inner_rmse": 2.6424519045726313,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF",
-    "inner_rmse": 2.0946018500964034,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "RF-fixed",
-    "inner_rmse": 2.0946018500964034,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "ET",
-    "inner_rmse": 2.1822012667153903,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "GB",
-    "inner_rmse": 2.1516162875251705,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "XGB",
-    "inner_rmse": 2.153414550189552,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "LGBM",
-    "inner_rmse": 2.13856794210903,
-    "params": {
-      "min_child_samples": 10,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "B",
-    "model": "CatBoost",
-    "inner_rmse": 2.2009812230977395,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "Ridge",
-    "inner_rmse": 2.514781613403233,
-    "params": {
-      "alpha": 1
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "SVR",
-    "inner_rmse": 2.346074729559773,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF",
-    "inner_rmse": 2.1380018018996,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "RF-fixed",
-    "inner_rmse": 2.1643925828292248,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "ET",
-    "inner_rmse": 2.1868820094620474,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "GB",
-    "inner_rmse": 2.1532161630385414,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "XGB",
-    "inner_rmse": 2.185531920608601,
-    "params": {
-      "max_depth": 3,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "LGBM",
-    "inner_rmse": 2.11610279744521,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 9
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "C",
-    "model": "CatBoost",
-    "inner_rmse": 2.184568744934439,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "Ridge",
-    "inner_rmse": 2.5510985321489152,
-    "params": {
-      "alpha": 1,
-      "k": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "SVR",
-    "inner_rmse": 2.2681357573811347,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4,
-      "k": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF",
-    "inner_rmse": 2.1780427389144297,
-    "params": {
-      "k": 5,
-      "max_features": 0.6,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "RF-fixed",
-    "inner_rmse": 2.2288824599512864,
-    "params": {
-      "k": 5
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "ET",
-    "inner_rmse": 2.22642013810951,
-    "params": {
-      "k": 5,
-      "max_features": 1.0,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "GB",
-    "inner_rmse": 2.189263034292837,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_samples_leaf": 5
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "XGB",
-    "inner_rmse": 2.1648271181103755,
-    "params": {
-      "k": 5,
-      "max_depth": 2,
-      "min_child_weight": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "LGBM",
-    "inner_rmse": 2.1644950394770777,
-    "params": {
-      "k": 5,
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "D",
-    "model": "CatBoost",
-    "inner_rmse": 2.2225305657122147,
-    "params": {
-      "depth": 3,
-      "k": 5,
-      "l2_leaf_reg": 3
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "Ridge",
-    "inner_rmse": 2.422127218776373,
-    "params": {
-      "alpha": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "SVR",
-    "inner_rmse": 2.128515513247552,
-    "params": {
-      "C": 2,
-      "epsilon": 0.4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF",
-    "inner_rmse": 2.0877147022638622,
-    "params": {
-      "max_features": 1.0,
-      "min_samples_leaf": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "RF-fixed",
-    "inner_rmse": 2.2202053618031243,
-    "params": {}
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "ET",
-    "inner_rmse": 2.140286997788523,
-    "params": {
-      "max_features": 0.6,
-      "min_samples_leaf": 4
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "GB",
-    "inner_rmse": 2.1769220039718116,
-    "params": {
-      "max_depth": 2,
-      "min_samples_leaf": 12
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "XGB",
-    "inner_rmse": 2.2077157432103998,
-    "params": {
-      "max_depth": 2,
-      "min_child_weight": 10
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "LGBM",
-    "inner_rmse": 2.101209201697078,
-    "params": {
-      "min_child_samples": 20,
-      "num_leaves": 5
-    }
-  },
-  {
-    "track": "2025-to-2024-buffered",
-    "fold": "1",
-    "feature": "E",
-    "model": "CatBoost",
-    "inner_rmse": 2.102543790636271,
-    "params": {
-      "depth": 5,
-      "l2_leaf_reg": 3
+{
+  "Spatial/1": {
+    "Ridge": {
+      "inner_rmse": 1.7170228843692565,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.7412300987353502,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.7277714312416543,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.7635934558718669,
+      "parameters": {
+        "gamma": 0.02,
+        "epsilon": 0.1,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.7548899354390162,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.7352126541265354,
+      "parameters": {
+        "num_leaves": 9,
+        "n_estimators": 70,
+        "min_child_samples": 24,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.7165903019062012,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 25,
+        "iterations": 70,
+        "depth": 3
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 1.8379410921090626,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "linear",
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.747049540626904,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 5,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.7704183226204926,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.7536532324158913,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.7140172471320192,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.7693817973058468,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.7314345175969221,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.808513474525134,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.7913606721485285,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.7375457142566602,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.7525696767236794,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.7603900604865033,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.793917708119391,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 5,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.7581558693680965,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.7982035994553793,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.7301974190028993,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.8132239152192677,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 1.8920741562430374,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.8573789939648186,
+      "parameters": {
+        "subsample": 1.0,
+        "n_estimators": 70,
+        "min_child_weight": 8,
+        "max_depth": 4,
+        "learning_rate": 0.07
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.7164485138357621,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 1.9766971308405619
+    },
+    "MISA": {
+      "experts": [
+        "ET no_landsat",
+        "Ridge compact",
+        "CatBoost",
+        "RF log"
+      ],
+      "global": [
+        0.28454692665247133,
+        0.3039177455635944,
+        0.21895969136545196,
+        0.19257563641848238
+      ],
+      "conditional": {
+        "0": [
+          0.4942151453486777,
+          0.2909352154455839,
+          0.14417968088702937,
+          0.07066995831870913
+        ],
+        "1": [
+          0.12268915736901928,
+          0.32460897640856134,
+          0.25608376864846205,
+          0.2966180975739573
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET no_landsat"
+    }
+  },
+  "Spatial/2": {
+    "Ridge": {
+      "inner_rmse": 1.715811610716257,
+      "parameters": {
+        "alpha": 30
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.7312289574568627,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.713555235149224,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.7701104919725348,
+      "parameters": {
+        "gamma": 0.02,
+        "epsilon": 0.1,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.7447597166772095,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.7588837481644963,
+      "parameters": {
+        "num_leaves": 9,
+        "n_estimators": 70,
+        "min_child_samples": 24,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.7038315989679065,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 25,
+        "iterations": 140,
+        "depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 2.0423768669134015,
+      "parameters": {
+        "n_estimators": 100,
+        "loss": "linear",
+        "learning_rate": 0.1
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.7115678921559716,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.7604241085686214,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.6874927435567624,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.659994935540705,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.7316811563484757,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.7076252705258235,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.7628709459137295,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.7761030846636767,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.735457353586489,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.7180190452465334,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.7385621232064672,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.7191376477905087,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.7590451675336478,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.7343500566784342,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.719833003226198,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.8114839529171354,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 1.9398907049751652,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.7961912929080284,
+      "parameters": {
+        "subsample": 1.0,
+        "n_estimators": 140,
+        "min_child_weight": 14,
+        "max_depth": 4,
+        "learning_rate": 0.07
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.7373173016262973,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 1.9795774725973212
+    },
+    "MISA": {
+      "experts": [
+        "ET no_landsat",
+        "CatBoost",
+        "Huber-GB",
+        "Ridge"
+      ],
+      "global": [
+        0.42681395919074605,
+        0.11757121560033122,
+        0.18874118100499085,
+        0.2668736442039317
+      ],
+      "conditional": {
+        "0": [
+          0.7041100642958755,
+          0.10800753355611521,
+          0.0778314148474189,
+          0.1100509873005904
+        ],
+        "1": [
+          0.2832713616488834,
+          0.12574639893047787,
+          0.26557138035308875,
+          0.32541085906754996
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET no_landsat"
+    }
+  },
+  "Spatial/3": {
+    "Ridge": {
+      "inner_rmse": 2.0179506647872025,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.9573377908002247,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.951273307948721,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.9993359078536157,
+      "parameters": {
+        "gamma": 0.02,
+        "epsilon": 0.1,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 2.037804059935459,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.9539345359970466,
+      "parameters": {
+        "num_leaves": 9,
+        "n_estimators": 70,
+        "min_child_samples": 24,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.9780320331595538,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 25,
+        "iterations": 70,
+        "depth": 3
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 2.024604803040585,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "linear",
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 2.025820751158936,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.965712910771031,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.9711248372581236,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.9255908464251974,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.9714446324217696,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.9695562397301234,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 2.040517724427127,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.9836997128578482,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.9361309494265295,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.9626915457418102,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.9641907367641567,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 2.0511504144443484,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.983835239966143,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 2.0000975343204037,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.9519002661679075,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 2.026677515443509,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 2.2613306751652202,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 2.0674234694442077,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.970103264001757,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 2.320133396788501
+    },
+    "MISA": {
+      "experts": [
+        "ET no_landsat",
+        "RF log",
+        "LightGBM",
+        "Ridge compact"
+      ],
+      "global": [
+        0.3885855316820945,
+        0.2472833666022232,
+        0.22442634817291449,
+        0.13970475354276785
+      ],
+      "conditional": {
+        "0": [
+          0.5647550978397159,
+          0.13285750707782895,
+          0.08015226720461231,
+          0.22223512787784297
+        ],
+        "1": [
+          0.20004410506452103,
+          0.34511064860110674,
+          0.32473885565299737,
+          0.13010639068137478
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET no_landsat"
+    }
+  },
+  "Spatial/4": {
+    "Ridge": {
+      "inner_rmse": 1.846477276455407,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.8395813938001835,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.8368817885518256,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.8424643797740554,
+      "parameters": {
+        "gamma": 0.02,
+        "epsilon": 0.1,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.8866805500954358,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.808901938415045,
+      "parameters": {
+        "num_leaves": 9,
+        "n_estimators": 70,
+        "min_child_samples": 24,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.8622261160610167,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 25,
+        "iterations": 70,
+        "depth": 3
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 1.9515988101920894,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "linear",
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.9267862860133236,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 5,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.8558342739665377,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.8581485250186565,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.8097915454181566,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.86425381114103,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.8412065554728014,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.9305418688517013,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.8866068756740166,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.8313730462489402,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.854580417530979,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.8476579210060287,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.951542360011428,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.8637585958440874,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.903195645475484,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.8228588027246078,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.9131923699018796,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 2.0717140619125813,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.9869521167377546,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.8455356611003726,
+      "parameters": {
+        "alpha": 2
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 2.0448770299519494
+    },
+    "MISA": {
+      "experts": [
+        "LightGBM",
+        "ET no_landsat",
+        "RF log",
+        "SVR"
+      ],
+      "global": [
+        0.24708691669399396,
+        0.31469483436527945,
+        0.21040008477548636,
+        0.22781816416524023
+      ],
+      "conditional": {
+        "0": [
+          0.089040330340178,
+          0.5456826047625449,
+          0.21888315175270162,
+          0.14639391314457534
+        ],
+        "1": [
+          0.3688878059413886,
+          0.1315467508239705,
+          0.21645219876602412,
+          0.28311324446861685
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "LightGBM"
+    }
+  },
+  "Spatial/5": {
+    "Ridge": {
+      "inner_rmse": 2.1217606202117603,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 2.076733629930985,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 2.1077856399080446,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 2.0854152415870537,
+      "parameters": {
+        "gamma": "scale",
+        "epsilon": 0.25,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 2.0551881258407727,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 2.1791347399500522,
+      "parameters": {
+        "num_leaves": 14,
+        "n_estimators": 140,
+        "min_child_samples": 8,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 2.033880020893207,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 3,
+        "iterations": 140,
+        "depth": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 2.2551544947703728,
+      "parameters": {
+        "n_estimators": 150,
+        "loss": "linear",
+        "learning_rate": 0.1
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 2.103367010557013,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 2.1404082350418427,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 2.082096666230192,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 2.0623761159714964,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 2.1066479213322413,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 2.0791327573531087,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 2.0229692057307713,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 2.1637326775328556,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 2.0489201257123204,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 2.1077856399080446,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 2.088340858263901,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 2.1112213374238826,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 5,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 2.1471361101195896,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 2.093197200517056,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 2.1634886634610817,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 2.0902867647892385,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 2.075105218027154,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 5,
+        "max_depth": 3,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 2.065911916734141,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 2.093230418610244,
+      "parameters": {
+        "alpha": 100
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 3,
+      "k": 20,
+      "inner_rmse": 2.0125886783858244
+    },
+    "MISA": {
+      "experts": [
+        "ET terrain_only",
+        "CatBoost",
+        "XGBoost",
+        "Huber-GB weighted"
+      ],
+      "global": [
+        0.44212068060811055,
+        0.2996540110365418,
+        0.17393061629359613,
+        0.08429469206175144
+      ],
+      "conditional": {
+        "0": [
+          0.7175294585357522,
+          0.1517235498919199,
+          0.08806613483220066,
+          0.04268085674012732
+        ],
+        "1": [
+          0.23218626593186956,
+          0.2546930778015177,
+          0.2861255555653818,
+          0.22699510070123108
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET terrain_only"
+    }
+  },
+  "Spatial/6": {
+    "Ridge": {
+      "inner_rmse": 1.664895031948202,
+      "parameters": {
+        "alpha": 30
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.6506451708496752,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.6439027880437147,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.6277861484900955,
+      "parameters": {
+        "gamma": 0.02,
+        "epsilon": 0.25,
+        "C": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.6609544199460051,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.6614067695204136,
+      "parameters": {
+        "num_leaves": 9,
+        "n_estimators": 70,
+        "min_child_samples": 24,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.620072437898564,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 3,
+        "iterations": 140,
+        "depth": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 1.6964382579100217,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "linear",
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.6606943799985416,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.6787496736727903,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.7041450732814305,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.6494980323507356,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.648550708963661,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.6517695822782068,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.7471191988697534,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.7007266069175202,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.6817157441253068,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.6439027880437147,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.6506451708496752,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.6606943799985416,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.6682075592807952,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.6808956010855127,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.632057352606673,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.6861708466219774,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 1.7075369569211982,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.7017527212738564,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.6549063581234533,
+      "parameters": {
+        "alpha": 0.1
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 1.8619941503285462
+    },
+    "MISA": {
+      "experts": [
+        "CatBoost",
+        "SVR",
+        "RF log",
+        "ExtraTrees"
+      ],
+      "global": [
+        0.31899512917672546,
+        0.30152961385650473,
+        0.2557353280723146,
+        0.12373992889445536
+      ],
+      "conditional": {
+        "0": [
+          0.1570862394895208,
+          0.1834681373723326,
+          0.4154496561926392,
+          0.2439959669455075
+        ],
+        "1": [
+          0.37111789277492496,
+          0.33506062319980023,
+          0.17087552547572946,
+          0.12294595854954532
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "CatBoost"
+    }
+  },
+  "2024-to-2025/1": {
+    "Ridge": {
+      "inner_rmse": 1.2458640642405825,
+      "parameters": {
+        "alpha": 10
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.332567269032709,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.322557699513,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.273254342259111,
+      "parameters": {
+        "gamma": "scale",
+        "epsilon": 0.25,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.3796749243330613,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.3625692114657486,
+      "parameters": {
+        "num_leaves": 14,
+        "n_estimators": 70,
+        "min_child_samples": 15,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.3556210944486728,
+      "parameters": {
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 3,
+        "iterations": 140,
+        "depth": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 1.4569819520456366,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "linear",
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.3656665638274412,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.308532717408017,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.3868002779839819,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.331653355714148,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.3396283206707167,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.3111203093914787,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.3463439516822615,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.352729866288916,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.3482185566168636,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.322557699513,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.332567269032709,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.3718595079542981,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.3412022101165346,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.3325013138565787,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.3411530651262935,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.3653254094503815,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 1.3716485594763654,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.4265538332493515,
+      "parameters": {
+        "subsample": 1.0,
+        "n_estimators": 140,
+        "min_child_weight": 14,
+        "max_depth": 4,
+        "learning_rate": 0.07
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.2865033907527634,
+      "parameters": {
+        "alpha": 2
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 1.4810150887392786
+    },
+    "MISA": {
+      "experts": [
+        "Ridge",
+        "SVR",
+        "ET no_geo",
+        "RF"
+      ],
+      "global": [
+        0.4437486215560857,
+        0.3357990941190883,
+        0.16182462634493017,
+        0.058627657979895983
+      ],
+      "conditional": {
+        "0": [
+          0.3797600587187837,
+          0.34287238474581877,
+          0.23954326106449697,
+          0.03782429547090064
+        ],
+        "1": [
+          0.46372955961636814,
+          0.3301100498742636,
+          0.12804060940469583,
+          0.07811978110467237
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "Ridge"
+    }
+  },
+  "2024-to-2025-buffered/1": {
+    "Ridge": {
+      "inner_rmse": 1.2599132134612199,
+      "parameters": {
+        "alpha": 10
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 1.3439768956561777,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 1.342894942703534,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 1.2970792201360346,
+      "parameters": {
+        "gamma": "scale",
+        "epsilon": 0.25,
+        "C": 2
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 1.3400151088154755,
+      "parameters": {
+        "subsample": 1.0,
+        "n_estimators": 140,
+        "min_child_weight": 14,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 1.335024990127975,
+      "parameters": {
+        "num_leaves": 14,
+        "n_estimators": 70,
+        "min_child_samples": 15,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 1.359996505618623,
+      "parameters": {
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 10,
+        "iterations": 140,
+        "depth": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 1.4449584070363584,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "square",
+        "learning_rate": 0.25
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 1.3608429735529575,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 3,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 1.3443646204425834,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 1.404219720186651,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 1.355113920572732,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 1.366844800671451,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 1.3338573428370446,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 1.382039218032919,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 1.37531985238126,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 1.3711999624204,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 1.342894942703534,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 1.3439768956561777,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 1.3633990000373797,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 1.3598419978589482,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 1.345034464731045,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 1.37150582486541,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 1.3653433464359677,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 1.348923757346427,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 1.4148736425932418,
+      "parameters": {
+        "subsample": 1.0,
+        "n_estimators": 140,
+        "min_child_weight": 14,
+        "max_depth": 4,
+        "learning_rate": 0.07
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 1.299044489372692,
+      "parameters": {
+        "alpha": 2
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 1.5768670838090664
+    },
+    "MISA": {
+      "experts": [
+        "Ridge",
+        "SVR",
+        "ET no_flags",
+        "LightGBM"
+      ],
+      "global": [
+        0.4650222930751646,
+        0.3110134662287269,
+        0.08222767656066793,
+        0.14173656413544053
+      ],
+      "conditional": {
+        "0": [
+          0.445294477847571,
+          0.2914056097725988,
+          0.13268151734884012,
+          0.13061839503099015
+        ],
+        "1": [
+          0.47457613287887146,
+          0.32017542677592375,
+          0.06024545983784261,
+          0.1450029805073623
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "Ridge"
+    }
+  },
+  "2025-to-2024/1": {
+    "Ridge": {
+      "inner_rmse": 2.15872174158029,
+      "parameters": {
+        "alpha": 30
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 2.1886706585001434,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 0.75,
+        "max_depth": null
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 2.1263572403886855,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 2.2223274116086618,
+      "parameters": {
+        "gamma": "scale",
+        "epsilon": 0.25,
+        "C": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 2.2307115173670744,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 2.2307419254654883,
+      "parameters": {
+        "num_leaves": 5,
+        "n_estimators": 70,
+        "min_child_samples": 15,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 2.215322546250618,
+      "parameters": {
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 3,
+        "iterations": 140,
+        "depth": 3
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 2.335680965209943,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "square",
+        "learning_rate": 0.25
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 2.340558862139999,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 1,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 2.118462140645302,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 2.1895980850631984,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 2.112897961275933,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 2.1208809351884157,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 2.20715838282833,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 2.293968841766139,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 2.1210243738017027,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 2.139085921144512,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 2.1287880343608516,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 2.19024993916632,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 2.363314610657303,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 2.2662221742710846,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 2.1208188741573615,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 2.231884711737987,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 2.1979868019320774,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 2.354981158582857,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 2.308346305713887,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 2.213563649612219,
+      "parameters": {
+        "alpha": 2
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 2.3424922528734347
+    },
+    "MISA": {
+      "experts": [
+        "ET no_landsat",
+        "Ridge",
+        "RF",
+        "CatBoost"
+      ],
+      "global": [
+        0.5588952509101315,
+        0.32398715139532847,
+        0.11711759769454011,
+        6.489119408915195e-18
+      ],
+      "conditional": {
+        "0": [
+          0.5986933343394482,
+          0.3492544000185339,
+          0.05205226564201801,
+          2.8840530706289753e-18
+        ],
+        "1": [
+          0.3233063888124377,
+          0.15647781968054236,
+          0.2948111717994166,
+          0.22540461970760337
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET no_landsat"
+    }
+  },
+  "2025-to-2024-buffered/1": {
+    "Ridge": {
+      "inner_rmse": 2.1373061147925165,
+      "parameters": {
+        "alpha": 30
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "RF": {
+      "inner_rmse": 2.102503934750201,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "ExtraTrees": {
+      "inner_rmse": 2.1017733148064215,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "SVR": {
+      "inner_rmse": 2.1329748832422304,
+      "parameters": {
+        "gamma": "scale",
+        "epsilon": 0.25,
+        "C": 5
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "SVR"
+    },
+    "XGBoost": {
+      "inner_rmse": 2.1793113168361153,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 70,
+        "min_child_weight": 14,
+        "max_depth": 2,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "LightGBM": {
+      "inner_rmse": 2.215677530346004,
+      "parameters": {
+        "num_leaves": 5,
+        "n_estimators": 70,
+        "min_child_samples": 15,
+        "learning_rate": 0.03
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "LightGBM"
+    },
+    "CatBoost": {
+      "inner_rmse": 2.169554107181885,
+      "parameters": {
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 3,
+        "iterations": 140,
+        "depth": 3
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "CatBoost"
+    },
+    "AdaBoost": {
+      "inner_rmse": 2.3356588473978186,
+      "parameters": {
+        "n_estimators": 50,
+        "loss": "square",
+        "learning_rate": 0.25
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "AdaBoost"
+    },
+    "Huber-GB": {
+      "inner_rmse": 2.240050402624228,
+      "parameters": {
+        "n_estimators": 110,
+        "min_samples_leaf": 10,
+        "max_depth": 1,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET no_geo": {
+      "inner_rmse": 2.1289063876818974,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET v1": {
+      "inner_rmse": 2.153113758954344,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "v1",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_landsat": {
+      "inner_rmse": 2.087694909516394,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "no_landsat",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_terrain": {
+      "inner_rmse": 2.080263234551969,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_terrain",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET no_flags": {
+      "inner_rmse": 2.1540147747569414,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "no_flags",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET terrain_only": {
+      "inner_rmse": 2.204294941497001,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "terrain_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET optical_only": {
+      "inner_rmse": 2.130747935890912,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "optical_only",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET compact": {
+      "inner_rmse": 2.1521904122071893,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "ET full-4": {
+      "inner_rmse": 2.1035081387916166,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "ExtraTrees"
+    },
+    "RF full-4": {
+      "inner_rmse": 2.102503934750201,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "RF"
+    },
+    "Huber-GB full-4": {
+      "inner_rmse": 2.2857354218142447,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "raw",
+      "family": "Huber-GB"
+    },
+    "ET log": {
+      "inner_rmse": 2.2026017793560855,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 4,
+        "max_features": 0.45,
+        "max_depth": 8
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "ExtraTrees"
+    },
+    "ET weighted": {
+      "inner_rmse": 2.0751662631528087,
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "ExtraTrees"
+    },
+    "RF log": {
+      "inner_rmse": 2.144755282865282,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 7,
+        "max_features": 0.75,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "log",
+      "family": "RF"
+    },
+    "RF weighted": {
+      "inner_rmse": 2.106362236757363,
+      "parameters": {
+        "n_estimators": 100,
+        "min_samples_leaf": 12,
+        "max_features": 1.0,
+        "max_depth": 4
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "RF"
+    },
+    "Huber-GB weighted": {
+      "inner_rmse": 2.2735593371098517,
+      "parameters": {
+        "n_estimators": 60,
+        "min_samples_leaf": 10,
+        "max_depth": 2,
+        "learning_rate": 0.065
+      },
+      "feature_set": "full",
+      "target": "weighted",
+      "family": "Huber-GB"
+    },
+    "XGB no_geo": {
+      "inner_rmse": 2.334644799594805,
+      "parameters": {
+        "subsample": 0.85,
+        "n_estimators": 140,
+        "min_child_weight": 4,
+        "max_depth": 4,
+        "learning_rate": 0.03
+      },
+      "feature_set": "no_geo",
+      "target": "raw",
+      "family": "XGBoost"
+    },
+    "Ridge compact": {
+      "inner_rmse": 2.2115742084082988,
+      "parameters": {
+        "alpha": 2
+      },
+      "feature_set": "compact",
+      "target": "raw",
+      "family": "Ridge"
+    },
+    "IDW": {
+      "p": 1,
+      "k": 20,
+      "inner_rmse": 2.26392384359484
+    },
+    "MISA": {
+      "experts": [
+        "ET weighted",
+        "RF",
+        "SVR",
+        "Ridge"
+      ],
+      "global": [
+        0.4484270671041145,
+        0.24102612346915597,
+        0.26593580283452983,
+        0.04461100659219963
+      ],
+      "conditional": {
+        "0": [
+          0.6007842000638539,
+          0.10955732884961636,
+          0.2693807408173481,
+          0.020277730269181685
+        ],
+        "1": [
+          0.2001245502216515,
+          0.4135206285689868,
+          0.30202632431322635,
+          0.08432849689613538
+        ]
+      }
+    },
+    "Inner champion": {
+      "expert": "ET weighted"
     }
   }
-]
+}

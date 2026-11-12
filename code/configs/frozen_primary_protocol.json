@@ -1,0 +1,20 @@
+{
+  "study": "V3 reanalysis of previously inspected EC1:5 outcomes",
+  "endpoint": "Pooled held-out RMSE in mS/cm",
+  "population": 349,
+  "seed": 123,
+  "buffer_m": 1000,
+  "folds": "Reuse exact V1 inner/outer membership for all ten outer splits",
+  "optical": "Native Sentinel-2 valid within 30 prior days; Landsat C2 T1 valid within 45 prior days, no same day, QA excludes water and cloud",
+  "terrain": "Static 2021 Copernicus GLO-30 surface elevations and 5x5-cell relief, relative elevation and central slope",
+  "missing_sources": "Run available verified sources. An entirely inaccessible source is excluded uniformly before model fitting. Row eligibility never changes.",
+  "selection": "Pooled inner-fold RMSE; eight fixed seed random parameter trials per main baseline family; four per architecture/ablation variant. Fixed learned convex OOF stack of top four distinct base families; optional subgroup weights are shrunk toward global weights by n/(n+40).",
+  "ensemble": {"maximum_families": 4, "shrinkage_n": 40, "l2_penalty": 0.2},
+  "comparators": ["V1 Auto", "V1 ExtraTrees (descriptive)", "Mean", "IDW", "Ridge", "RF", "ExtraTrees", "SVR", "XGBoost", "LightGBM", "CatBoost", "AdaBoost", "Huber-GB", "XGB + spline", "Inner champion", "MISA global", "MISA equal"],
+  "primary": "MISA",
+  "gate": "Winning claim requires smaller primary RMSE versus relevant comparators including V1 Auto and V1 descriptive ExtraTrees, plus paired intervals and practical credibility. Reuse of known outcomes rules out independent external confirmation.",
+  "secondary": ["MAE", "R2", "EC >= 5 MAE and bias", "optical missingness strata", "campaign transfer", "1km-buffered transfer"],
+  "bootstrap": {"replicates": 4000, "unit": "Archived spatial test block", "interval": "paired percentile 95% conditional on fitted predictions"},
+  "permutation_replicates": 12,
+  "search_budgets": {"main_family": 8, "variant": 4}
+}

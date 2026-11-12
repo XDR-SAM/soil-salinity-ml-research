@@ -1,4 +1,10 @@
-* text=auto
-*.sh text eol=lf
+* text=auto eol=lf
 *.pdf binary
 *.png binary
+archive/v1/** -text
+code/configs/** -text
+code/scripts/benchmark.py -text
+data/** -text
+figures/** -text
+paper/** -text
+results/** -text
