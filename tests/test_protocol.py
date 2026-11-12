@@ -84,7 +84,7 @@ def test_archived_splits_and_predictions():
     assert len(predictions.query("track == 'Spatial' and feature == 'A' and model == 'IDW'")) == 349
 
 
-def test_optical_causality_and_archive():
+def test_optical_acquisition_precedes_collection():
     source = ROOT / "data/derived"
     field = pd.read_csv(source / "field.csv", parse_dates=["date"]).set_index("uid")
     optical = pd.read_csv(source / "sentinel.csv").set_index("uid")
@@ -96,7 +96,25 @@ def test_optical_causality_and_archive():
     assert lag.between(1, 30).all()
     assert np.array_equal(lag, matched.lag_days)
     assert matched.scl.isin([4, 5]).all()
-    assert (matched[["ndvi", "ndmi"]].abs() <= 1).all().all()
+    assert matched[["blue", "green", "red", "nir", "swir16", "swir22"]].notna().all().all()
+    for index, other in (("ndvi", "red"), ("ndmi", "swir16")):
+        denominator = matched.nir + matched[other]
+        ratio = ((matched.nir - matched[other]) / denominator.where(denominator > 1e-6)).clip(-1, 1)
+        np.testing.assert_allclose(matched[index], ratio, equal_nan=True)
+
+
+def test_auto_uses_inner_fold_scores():
+    scores = pd.read_csv(ROOT / "results/inner_scores.csv")
+    predictions = pd.read_csv(ROOT / "results/predictions.csv")
+    selected = predictions.loc[predictions.model.eq("Auto")]
+    index = ["track", "fold", "feature"]
+    trials = scores.groupby(index + ["model", "parameters"])[["sse", "n"]].sum()
+    trials["rmse"] = np.sqrt(trials.sse / trials.n)
+    for group, estimates in selected.groupby(index):
+        chosen = estimates.selected_model.unique()
+        assert len(chosen) == 1
+        options = trials.loc[group]
+        assert np.isclose(options.loc[chosen[0], "rmse"].min(), options.rmse.min())
 
 
 def test_paper_inputs():

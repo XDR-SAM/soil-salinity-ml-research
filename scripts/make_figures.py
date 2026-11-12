@@ -1,4 +1,6 @@
 """Render publication figures from audited field observations and held-out predictions."""
+from itertools import pairwise
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -19,7 +21,7 @@ PALETTE = {2024: BLUE, 2025: ORANGE}
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9, "axes.spines.top": False,
                      "axes.spines.right": False, "axes.labelcolor": NAVY, "text.color": NAVY,
                      "pdf.fonttype": 42, "svg.fonttype": "none", "figure.dpi": 120,
-                     "savefig.dpi": 320, "axes.titleweight": "semibold"})
+                     "savefig.dpi": 320, "axes.titleweight": "bold"})
 DEST = ROOT / "figures"
 RESULTS = ROOT / "results"
 
@@ -27,7 +29,11 @@ RESULTS = ROOT / "results"
 def save(fig, name: str) -> None:
     DEST.mkdir(exist_ok=True)
     for extension in ("pdf", "svg", "png"):
-        fig.savefig(DEST / f"{name}.{extension}", bbox_inches="tight", facecolor="white", pad_inches=.04)
+        path = DEST / f"{name}.{extension}"
+        fig.savefig(path, bbox_inches="tight", facecolor="white", pad_inches=.04)
+        if extension == "svg":
+            lines = path.read_text(encoding="utf-8").splitlines()
+            path.write_text("\n".join(line.rstrip() for line in lines) + "\n", encoding="utf-8")
     plt.close(fig)
 
 
@@ -36,32 +42,32 @@ def workflow() -> None:
     ax.set(xlim=(0, 12), ylim=(0, 5.2))
     ax.axis("off")
     boxes = {
-        "input": (0.12, 3.86, "Field EC workbooks\n162 (2024) + 187 (2025)"),
-        "audit": (3.15, 3.86, "Verify and audit\nHashes, rows, units, dates"),
-        "features": (6.18, 3.86, "Link predictors\nUTM, Sentinel-2, elevation"),
-        "fold": (9.21, 3.86, "Define test partitions\nCoordinates and campaign"),
-        "models": (0.12, 2.34, "Fit candidate models\nBaselines and tuned learners"),
-        "prep": (3.15, 2.34, "Fit preprocessing\nOnly on training rows"),
-        "spatial": (6.18, 2.34, "Spatial holdouts\nSix blocks + 1 km buffer"),
-        "temporal": (9.21, 2.34, "Campaign holdouts\n2024 → 2025 and reverse"),
-        "held": (0.12, 0.55, "Predict held-out EC\nRefit inner-CV selections"),
-        "assess": (3.15, 0.55, "Evaluate errors\nRMSE, MAE, R²"),
-        "diagnose": (6.18, 0.55, "Check reliability\nSpatial bootstrap, residuals"),
-        "paper": (9.21, 0.55, "Archive outputs\nPaper, code and predictions"),
+        "input": (0.12, 3.86, "Field workbooks\n162 sites in 2024\n187 sites in 2025"),
+        "audit": (3.15, 3.86, "Verify inputs\nCheck hashes, rows,\nunits and dates"),
+        "features": (6.18, 3.86, "Link predictors\nUTM, Sentinel-2\nand elevation"),
+        "fold": (9.21, 3.86, "Define partitions\nBy location\nor campaign"),
+        "models": (0.12, 2.34, "Fit candidates\nBaselines and learners\ntuned in inner CV"),
+        "prep": (3.15, 2.34, "Preprocess\nFit transformations\non training rows"),
+        "spatial": (6.18, 2.34, "Spatial holdouts\nSix outer clusters\nwith 1 km buffer"),
+        "temporal": (9.21, 2.34, "Year holdouts\nTrain 2024, test 2025\nand reverse"),
+        "held": (0.12, 0.55, "Predict test EC\nRefit selections on\nouter training sets"),
+        "assess": (3.15, 0.55, "Score predictions\nRMSE, MAE and R²"),
+        "diagnose": (6.18, 0.55, "Diagnose errors\nResiduals, bootstrap,\nfeature reliance"),
+        "paper": (9.21, 0.55, "Archive results\nPaper, code and\nheld-out predictions"),
     }
     w, h = 2.66, .96
     for key, (x, y, label) in boxes.items():
         face = TEAL if key in ("spatial", "temporal") else "#eef4f7"
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=.035,rounding_size=.12",
                                     facecolor=face, edgecolor="#9db2bc", lw=.65))
-        title, subtitle = label.split("\n")
-        ax.text(x+w/2, y+.64, title, ha="center", va="center", fontsize=9.4, weight="semibold")
-        ax.text(x+w/2, y+.29, subtitle, ha="center", va="center", fontsize=8)
+        title, subtitle = label.split("\n", 1)
+        ax.text(x+w/2, y+.72, title, ha="center", va="center", fontsize=8.2, weight="bold")
+        ax.text(x+w/2, y+.31, subtitle, ha="center", va="center", fontsize=7.2, linespacing=1.10)
     def arrow(a, b):
         ax.annotate("", xy=b, xytext=a, arrowprops=dict(arrowstyle="-|>", lw=.85, color=GRAY,
                                                         shrinkA=0, shrinkB=0))
     for names in (("input", "audit", "features", "fold"), ("held", "assess", "diagnose", "paper")):
-        for a, b in zip(names, names[1:]):
+        for a, b in pairwise(names):
             x, y, _ = boxes[a]
             nx, _, _ = boxes[b]
             arrow((x+w+.03, y+h/2), (nx-.03, y+h/2))
@@ -91,11 +97,12 @@ def maps(data: pd.DataFrame, pred: pd.DataFrame) -> None:
                         label=f"{int(block)} ({len(group)})", linewidths=0)
     axes[0].set(title="(a) Field campaigns", ylabel="UTM northing (km)")
     axes[1].set_title("(b) Outer spatial folds")
-    for ax in axes:
+    for ax, cols in zip(axes, [2, 3], strict=True):
         ax.set(xlabel="UTM easting (km)", aspect="equal")
-        ax.legend(loc="upper right", frameon=False, fontsize=8, markerscale=1.25)
+        ax.legend(loc="upper center", bbox_to_anchor=(.5, -.17), ncols=cols, frameon=False,
+                  fontsize=8, markerscale=1.15, handletextpad=.25, columnspacing=.8)
         ax.grid(alpha=.16)
-    axes[0].annotate("N", xy=(.09, .94), xytext=(.09, .82), xycoords="axes fraction", ha="center",
+    axes[0].annotate("N", xy=(.91, .94), xytext=(.91, .81), xycoords="axes fraction", ha="center",
                      arrowprops=dict(arrowstyle="-|>", color=NAVY))
     x, y = xy.x.min()+4, xy.y.min()+1
     axes[0].plot([x, x+10], [y, y], color=NAVY, lw=2)
@@ -107,7 +114,8 @@ def distributions(data: pd.DataFrame) -> None:
     fig, ax = plt.subplots(figsize=(3.42, 2.18), layout="constrained")
     for year, group in data.groupby("year"):
         x = np.sort(group.ec)
-        ax.step(x, np.arange(1, len(x)+1)/len(x), where="post", color=PALETTE[year], label=str(year))
+        ax.step(np.r_[0, x, 11], np.r_[0, np.arange(1, len(x)+1)/len(x), 1],
+                where="post", color=PALETTE[year], label=str(year))
     ax.set(xlabel="Measured EC (mS/cm)", ylabel="Cumulative fraction", xlim=(0, 11), ylim=(0, 1.03))
     ax.grid(alpha=.18)
     ax.legend(loc="lower right", frameon=False)
@@ -128,7 +136,7 @@ def model_scores(metrics: pd.DataFrame) -> None:
             color = BLUE if i >= 3 else GRAY
             ax.hlines(i, row.rmse_lo, row.rmse_hi, color=color, linewidth=1.2)
             ax.scatter(row.rmse, i, color=color, s=19, zorder=3)
-        ax.set(title=title, xlabel="RMSE (mS/cm)", yticks=range(len(chosen)),
+        ax.set(title=title, xlabel="RMSE (mS/cm)", xticks=[1.5, 2., 2.5, 3.], yticks=range(len(chosen)),
                yticklabels=[v[2] for v in chosen], ylim=(len(chosen)-.5, -.5))
         ax.grid(axis="x", alpha=.2)
     save(fig, "model_comparison")
@@ -170,7 +178,8 @@ def importance_plot(importance: pd.DataFrame) -> None:
     for i, group in enumerate(["Coordinates", "Sentinel-2", "Elevation"]):
         values = table.loc[group]
         ax.scatter(values, np.full(len(values), i), s=20, color=BLUE, alpha=.65)
-        ax.scatter(values.mean(), i, s=50, marker="D", color=NAVY, label="Fold mean" if i == 0 else None)
+        ax.scatter(values.mean(), i, s=50, marker="D", color=NAVY,
+                   label="Mean across folds" if i == 0 else None)
     ax.axvline(0, color=GRAY, linestyle="--", linewidth=.8)
     ax.set(yticks=[0, 1, 2], yticklabels=["Coordinates", "Sentinel-2", "Elevation"],
            ylim=(2.5, -.5), xlabel="Permutation ΔRMSE (mS/cm)")

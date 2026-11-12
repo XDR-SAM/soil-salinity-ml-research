@@ -78,8 +78,15 @@ def main() -> None:
     main = predictions.loc[predictions.model.eq("Auto") & predictions.feature.eq(
         "E" if predictions.feature.eq("E").any() else "A")].copy()
     main["ec_bin"] = pd.cut(main.observed, [0, .5, 2, 5, np.inf], right=False)
+    main["distance_km"] = pd.cut(main.nearest_train_m / 1000, [0, 1, 5, 15, np.inf], right=False)
+    satellite = ROOT / "data/derived/sentinel.csv"
+    strata = ["year", "ec_bin", "block", "distance_km"]
+    if satellite.exists():
+        coverage = pd.read_csv(satellite).set_index("uid").scene.notna()
+        main["optical_available"] = main.uid.map(coverage)
+        strata.append("optical_available")
     subgroups = []
-    for kind in ("year", "ec_bin", "block"):
+    for kind in strata:
         for (track, level), subset in main.groupby(["track", kind], observed=True):
             subgroups.append(dict(track=track, stratum=kind, level=str(level),
                                   **score(subset.observed.to_numpy(), subset.predicted.to_numpy())))

@@ -21,6 +21,16 @@ def main() -> None:
     importance = pd.read_csv(RESULTS / "importance.csv")
     importance = (importance.loc[importance.track.eq("Spatial")].groupby("group")
                   .delta_rmse.mean().round(3).to_dict())
+    pred = pd.read_csv(RESULTS / "predictions.csv")
+    decisions = (pred.loc[pred.feature.eq("E") & pred.model.eq("Auto"),
+                          ["track", "fold", "selected_model"]].drop_duplicates())
+    model_names = {"GB": "gradient boosting", "XGB": "XGBoost", "ET": "extra trees",
+                   "RF": "tuned random forest", "RF-fixed": "fixed random forest",
+                   "LGBM": "LightGBM", "Ridge": "ridge", "SVR": "SVR",
+                   "CatBoost": "CatBoost"}
+    selections = decisions[decisions.track.eq("Spatial")].selected_model.value_counts()
+    selection_text = ", ".join(f"{model_names[model]} ({count})" for model, count in selections.items())
+    transfer_selections = decisions.set_index("track").selected_model
 
     def row(track, feature="E", model="Auto"):
         return metrics.loc[(track, feature, model)]
@@ -45,36 +55,54 @@ def main() -> None:
     forest_match = contrast("Spatial", "E", "A", "RF", "RF")
     high = subgroup.loc[("Spatial", "ec_bin", "[5.0, inf)")]
     low = subgroup.loc[("Spatial", "ec_bin", "[0.0, 0.5)")]
-    blocks = subgroup.loc[("Spatial", "block")].sort_values("rmse")
+    blocks = subgroup.xs(("Spatial", "block"), level=("track", "stratum")).sort_values("rmse")
     bounds = json.loads((ROOT / "reports/satkhira_boundary_check.json").read_text())["candidate_counts"]
     coverage = []
     for year, sample in satellite.groupby("year"):
         valid = sample.lag_days.dropna()
         coverage.append(f"{year}: {len(valid)}/{len(sample)}, median {valid.median():g} days, "
                         f"range {valid.min():g}--{valid.max():g} days")
-    cov_text = ("The newest eligible optical scene was available for " + "; ".join(coverage) + ". "
-                f"Surface elevation was available for {elevation.elevation.notna().sum()} of {len(field)} sites.")
+    cov_text = (f"Matched Sentinel-2 records ({coverage[0]}) and ({coverage[1]}) "
+                "used the newest eligible scenes. Surface elevation was available for "
+                f"{elevation.elevation.notna().sum()} of {len(field)} sites.")
 
     comparison = []
     for item, label in [(idw, "tuned IDW"), (coord, "coordinate-only Auto")]:
         if item.hi < 0:
-            comparison.append(f"below zero against {label}")
+            comparison.append(f"lies below zero against {label}")
         elif item.lo > 0:
-            comparison.append(f"above zero against {label}")
+            comparison.append(f"lies above zero against {label}")
         else:
             comparison.append(f"includes zero against {label}")
     spatial_words = "The paired interval " + " and ".join(comparison) + "."
+    optical = [subgroup.loc[("Spatial", "optical_available", group)] for group in ("True", "False")]
+    spatial_scores = metrics.xs("Spatial", level="track").reset_index()
+    spatial_auto = spatial_scores[spatial_scores.model.eq("Auto")]
+    leading_set = spatial_auto.loc[spatial_auto.rmse.idxmin()]
+    families = spatial_scores[~spatial_scores.model.eq("Auto")]
+    leading_family = families.loc[families.rmse.idxmin()]
+    forward_auto = metrics.xs((TRACKS[1], "Auto"), level=("track", "model"))
+    forward_set = forward_auto.rmse.idxmin()
+    descriptive = (
+        f"Set {leading_set.feature} gave the lowest spatial Auto point estimate, "
+        f"{leading_set.rmse:.3f} \\unit{{}} ($R^2={leading_set.r2:.3f}$). The lowest individual family "
+        f"score was {leading_family.rmse:.3f} \\unit{{}} for Set {leading_family.feature} "
+        f"{model_names.get(leading_family.model, leading_family.model)}. "
+        "These descriptive rankings use outer scores and are separate from the nested Auto estimates."
+    )
     trans = []
     for track, label in zip(TRACKS[1:], ("the forward", "the reverse"), strict=True):
         diff = contrast(track, "E", "A", "IDW")
         trans.append(f"{describe(diff)} for {label} transfer")
     spatial_ref = row("Spatial", "A", "IDW").rmse
-    transfer_ref = [row(track, "A", "IDW").rmse for track in TRACKS[1:]]
-    related = (
-        f"Spatial Auto and IDW achieved {spatial.rmse:.3f} and {spatial_ref:.3f} \\unit{{}} RMSE. "
-        f"Across campaigns, the all-predictor procedure yielded {forward.rmse:.3f} and "
-        f"{reverse.rmse:.3f} \\unit{{}} versus {transfer_ref[0]:.3f} and {transfer_ref[1]:.3f} for IDW."
-    )
+    evidence = [contrast(track, "E", "A", "IDW") for track in TRACKS]
+    favours_enriched = sum(item.hi < 0 for item in evidence)
+    if favours_enriched:
+        conclusion = (f"The all-predictor procedure had a paired RMSE interval below zero "
+                      f"against IDW in {favours_enriched} of the three primary evaluations.")
+    else:
+        conclusion = ("The paired intervals did not establish an all-predictor improvement "
+                      "over IDW in any primary evaluation.")
     table = []
     for name, f, m in [
         ("Training mean", "A", "Mean"), ("Training median", "A", "Median"),
@@ -93,6 +121,7 @@ def main() -> None:
         "CoordDelta": f"{coord.delta_rmse:+.3f}", "CoordDeltaCI": ci(coord),
         "BoundaryCount": f"{bounds['2024']} (2024) and {bounds['2025']} (2025)",
         "CoverageText": cov_text, "SpatialInterpretation": spatial_words,
+        "DescriptiveText": descriptive,
         "AblationText": ("In spatial CV, replacing coordinate-only selection with optical-only "
                          f"selection changed RMSE by {describe(opt)}. Adding elevation to optical "
                          f"features changed it by {describe(elev)}. Restricting the candidate "
@@ -102,19 +131,30 @@ def main() -> None:
                          f"{describe(forest_match)} for the random forest."),
         "TuningText": ("With all predictors, tuning the random forest changed RMSE by "
                        f"{describe(tune)} relative to the fixed forest."),
-        "TransferText": "Relative to tuned IDW, the RMSE differences were " + " and ".join(trans) + ".",
+        "SelectionText": f"Training-only selection in Set E chose {selection_text} across the six spatial folds.",
+        "TransferText": ("Relative to tuned IDW, the RMSE differences were " + " and ".join(trans) +
+                         ". Inner selection chose " +
+                         " and ".join(model_names[transfer_selections.loc[t]] for t in TRACKS[1:]) +
+                         f", respectively, for Set E. Set {forward_set} gave the lowest "
+                         f"forward Auto point estimate ({forward_auto.loc[forward_set].rmse:.3f} \\unit{{}}). "
+                         f"Set E mean residual was {forward.bias:+.3f} \\unit{{}} in the forward transfer "
+                         f"and {reverse.bias:+.3f} \\unit{{}} in the reverse transfer."),
         "BufferedForward": f'{row("2024-to-2025-buffered").rmse:.3f}',
         "BufferedReverse": f'{row("2025-to-2024-buffered").rmse:.3f}',
         "ResidualText": (f"In spatial CV the {int(high.n)} observations at or above 5 \\unit{{}} "
                          f"had mean residual {high.bias:+.3f} \\unit{{}}, and the {int(low.n)} "
                          f"below 0.5 \\unit{{}} had mean residual {low.bias:+.3f} \\unit{{}}. "
                          f"Spatial fold RMSE ranged from {blocks.rmse.min():.3f} to "
-                         f"{blocks.rmse.max():.3f} \\unit{{}}."),
-        "ImportanceText": ("Across spatial folds, the mean increase in RMSE was "
+                         f"{blocks.rmse.max():.3f} \\unit{{}}. Spatial RMSE was "
+                         f"{optical[0].rmse:.3f} \\unit{{}} at {int(optical[0].n)} sites with optical "
+                         f"matches and {optical[1].rmse:.3f} \\unit{{}} at {int(optical[1].n)} "
+                         "sites requiring optical imputation. The comparison is descriptive and "
+                         "can reflect differences in sampled locations and EC distributions."),
+        "ImportanceText": ("Across spatial folds, the mean change in RMSE was "
                            f"{importance['Coordinates']:+.3f} for coordinates, "
                            f"{importance['Sentinel-2']:+.3f} for Sentinel-2 and "
                            f"{importance['Elevation']:+.3f} \\unit{{}} for elevation."),
-        "ConclusionText": related,
+        "ConclusionText": conclusion,
         "ResultRows": "\n" + "\n".join(table) + "\n",
     }
     output = ["% Generated by scripts/paper_numbers.py from results and the acquisition logs."]

@@ -91,7 +91,8 @@ def extract_year(data: pd.DataFrame, items: list[dict]) -> tuple[pd.DataFrame, l
             mask = pixels(assets["scl"], candidates, raw=True)
             clear = candidates.loc[mask.value.isin(SCL_CLEAR)]
             if not clear.empty:
-                samples = list(workers.map(lambda key: pixels(assets[key], clear).value, BANDS))
+                tasks = [workers.submit(pixels, assets[key], clear) for key in BANDS]
+                samples = [task.result().value for task in tasks]
                 reflectance = pd.concat(samples, axis=1)
                 reflectance.columns = list(BANDS)
                 reflectance = reflectance.dropna()

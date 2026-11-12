@@ -1,0 +1,19 @@
+{
+  "python": "3.14.3",
+  "os": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.0",
+    "openpyxl": "3.1.5",
+    "pyproj": "3.8.0",
+    "rasterio": "1.5.2",
+    "requests": "2.34.2",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.1",
+    "threadpoolctl": "3.6.0"
+  }
+}
