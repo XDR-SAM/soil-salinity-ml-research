@@ -1,0 +1,128 @@
+[
+  {
+    "year": 2024,
+    "record_url": "https://zenodo.org/records/14560019",
+    "download_url": "https://zenodo.org/records/14560019/files/Soil_Salinity_Data_BD032024.xlsx?download=1",
+    "filename": "Soil_Salinity_Data_BD032024.xlsx",
+    "doi": "10.5281/zenodo.14560019",
+    "version": null,
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "creators": [
+      {
+        "name": "Sarkar, Showmitra Kumar",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0000-0001-5928-7577"
+      },
+      {
+        "name": "Haydar, Mafrid",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Rudra, Rhyme Rubayet",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Mazumder, Tanmoy",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Nur, Md. Sadmin",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Islam, Md. Shahriar",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Sany, Shakib Mohammad",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Noor, Tanzim Al",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Ahmed, Shakil",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Ahmad, Myisha",
+        "affiliation": "BRAC"
+      },
+      {
+        "name": "Sakib, Annajmus",
+        "affiliation": "BRAC"
+      },
+      {
+        "name": "Ravela, Sai",
+        "affiliation": "Massachusetts Institute of Technology",
+        "orcid": "0000-0002-6303-9936"
+      }
+    ],
+    "publication_date": "2024-12-26",
+    "md5": "1da7d0e9282e1b5a8ee14618b9ec583c",
+    "sha256": "63b4fcb96dbac24937580ddadb49d9d5b783c78144c93d6955a0252a6e522c78",
+    "expected_rows": 162,
+    "origin": "Zenodo versioned original",
+    "verified_at_utc": "2026-11-12T15:56:07.689575+00:00"
+  },
+  {
+    "year": 2025,
+    "record_url": "https://zenodo.org/records/19711551",
+    "download_url": "https://zenodo.org/records/19711551/files/Soil_Salinity_Data_BD042025.xlsx?download=1",
+    "filename": "Soil_Salinity_Data_BD042025.xlsx",
+    "doi": "10.5281/zenodo.19711551",
+    "version": null,
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "creators": [
+      {
+        "name": "Sarkar, Showmitra Kumar",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0000-0001-5928-7577"
+      },
+      {
+        "name": "Haydar, Mafrid",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0009-0003-9229-0171"
+      },
+      {
+        "name": "Mazumder, Tanmoy",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0000-0003-4995-1088"
+      },
+      {
+        "name": "Sany, Shakib Mohammad",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0009-0007-4918-5666"
+      },
+      {
+        "name": "Al Noor, Tanzim",
+        "affiliation": "Khulna University of Engineering and Technology",
+        "orcid": "0009-0000-8327-328X"
+      },
+      {
+        "name": "Ahmed, Shakil",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Utsho, Naimur Rahman",
+        "affiliation": "Khulna University of Engineering and Technology"
+      },
+      {
+        "name": "Ravela, Sai",
+        "affiliation": "Massachusetts Institute of Technology",
+        "orcid": "0000-0002-6303-9936"
+      }
+    ],
+    "publication_date": "2026-04-23",
+    "md5": "f0189c1cf56fe7af8f63f2a7277ceba7",
+    "sha256": "647175c27372304f9e1fa57c87ab873e07f356d278ff98dd629595710d571be9",
+    "expected_rows": 187,
+    "origin": "Zenodo versioned original",
+    "verified_at_utc": "2026-11-12T15:56:10.552361+00:00"
+  }
+]

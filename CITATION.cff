@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: Cite the manuscript and separately credit both original data releases.
+title: "Benchmarking Machine Learning for Multi-Year Soil Salinity Prediction in Coastal Bangladesh: Spatial and Temporal Generalization"
+type: software
+authors:
+  - family-names: Rima
+    given-names: Kamrunnahar
+    affiliation: Bangladesh University
+  - family-names: Hasiba
+    given-names: Sheikh
+    affiliation: Bangladesh University
+references:
+  - type: data
+    title: A Topsoil Salinity Observatory for Arable Lands in Coastal Southwest Bangladesh
+    authors:
+      - family-names: Sarkar
+        given-names: Showmitra Kumar
+    doi: 10.5281/zenodo.14560019
+    year: 2024
+  - type: data
+    title: A Topsoil Salinity Observatory for Arable Lands in Coastal Southwest Bangladesh (2025)
+    authors:
+      - family-names: Sarkar
+        given-names: Showmitra Kumar
+    doi: 10.5281/zenodo.19711551
+    year: 2026

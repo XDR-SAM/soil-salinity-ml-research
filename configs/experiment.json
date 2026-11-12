@@ -1,0 +1,8 @@
+{
+  "seed": 123,
+  "outer_spatial_folds": 6,
+  "inner_spatial_folds": 4,
+  "buffer_metres": 1000,
+  "bootstrap_replicates": 4000,
+  "permutation_replicates": 20
+}

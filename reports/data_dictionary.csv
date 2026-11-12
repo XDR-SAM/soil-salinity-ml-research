@@ -1,0 +1,32 @@
+field,source,unit,role
+uid,source year and workbook row,none,stable join key
+year,Zenodo workbook campaign,year,split and reporting only
+sheet,workbook,none,provenance
+excel_row,workbook,one-based row,provenance
+original_id,workbook ID,none,provenance
+sample_id,workbook SAMPLE_NO,none,provenance
+lat,workbook Latitude,WGS84 degrees,projection and feature linkage
+lon,workbook Longitude,WGS84 degrees,projection and feature linkage
+ec,workbook Electrical_Conductivity_EC,1:5 extract mS/cm,target
+sample_type,workbook Sample_Typ or Sample_Type,none,eligibility only
+date,workbook Collection_Date,local calendar day,satellite alignment only
+team,workbook Team,none,provenance
+easting,EPSG 32645 projection,m,predictor and folds
+northing,EPSG 32645 projection,m,predictor and folds
+blue,Sentinel-2 B02,unitless reflectance,predictor
+green,Sentinel-2 B03,unitless reflectance,predictor
+red,Sentinel-2 B04,unitless reflectance,predictor
+nir,Sentinel-2 B08,unitless reflectance,predictor
+swir16,Sentinel-2 B11,unitless reflectance,predictor
+swir22,Sentinel-2 B12,unitless reflectance,predictor
+ndvi,Sentinel-2 NIR and red,unitless ratio,predictor
+ndmi,Sentinel-2 NIR and SWIR1,unitless ratio,predictor
+scene,Earth Search STAC item ID,none,provenance
+acquired_utc,Earth Search scene time,ISO 8601 UTC,provenance
+lag_days,collection day minus scene local day,day,provenance
+scl,Sentinel-2 Level-2A scene classification,class code,cloud mask only
+scl_row,Sentinel-2 SCL grid row,zero-based pixel,provenance
+scl_col,Sentinel-2 SCL grid column,zero-based pixel,provenance
+elevation,Copernicus GLO-30 DSM,m,predictor
+dem_tile,Copernicus GLO-30 tile,none,provenance
+dem_url,Copernicus GLO-30 COG,URL,provenance
